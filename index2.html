@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-6-auto">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-3">First Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="first-name" id="firstName">
+
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-3">last Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="last-name" id="lastName">
+
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-3">address</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="address" id="address">
+
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-3">First Name</label>
+                        <div class="col-sm-9">
+                            <input type="submit" name="btn" onclick="alert('hello world');" class="btn btn-success" value="submit">
+                            <input type="submit" name="btn" onclick="alert('hello world');" class="btn btn-success" value="submit">
+                            <input type="submit" name="btn" id="addition" class="btn btn-success" value="+">
+                            <input type="submit" name="btn" id="subtractionn" class="btn btn-success" value="-">
+                            <input type="submit" name="btn" id="multiplication" class="btn btn-success" value="/">
+                            <input type="submit" name="btn" id="division" class="btn btn-success" value="#">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+</div>
+
+<script>
+
+    var btnElement =document.getElementById('btn');
+ alert(btnElement);
+
+ btnElement.onclick = function () {
+ //alert('test');
+    var firstName= document.getElementById('firstName').value;
+    var lastName= document.getElementById('lastName').value;
+    var fullName= firstNameValue+" " +lastNameValue;
+    document.getElementById('fullName').value=fullName;
+ alert(firstNameValue);
+ };
+
+
+
+
+
+
+
+
+
+</script>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/poppers.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/my-script.js"></script>
+
+</body>
+</html>
