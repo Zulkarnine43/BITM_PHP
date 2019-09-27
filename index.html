@@ -1,90 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>HOME</title>
+
     <link rel="stylesheet" href="css/bootstrap.css"/>
-    <!--<link  rel="stylesheet" href="style.css"/>-->
+    <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
-<!--<div class="div_one"></div>-->
+<form>
 <div class="container">
-<div class="row">
-    <div class="col-xl-3 col-lg-3 col-md-3" style="height: 200px; border: 1px solid"></div>
-    <div class="col-xl-9 col-lg-9 col-md-9" style="height: 200px; border: 1px solid"></div>
+    <div class="row">
+        <div class="col-sm-12">
+            <hr/>
+            <form action="demo.html" method="post">
+            <div class="form-group">
+            <label>First_Name</label>
+            <input type="text" name="first-name" id="FirstName" class="form-control">
+            </div>
 
+            <div class="form-group">
+                <label>Last_Name</label>
+                <input type="text" name="last-name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Email_Address</label>
+                <input type="email" name="email-address" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="number" name="phone-number" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Date of Birth</label>
+                <input type="date" name="date-of-Birth" class="form-control">
+            </div>
+            <div class="form-group">
+                <label><input type="radio" name="gender" value="male" >Male</label>
 
-</div>
-</div>
-<div clsss="container">
-<div class="row">
+            </div>
+            <div class="form-group">
+                <label><input type="radio" name="gender" value="female" >FeMale</label>
 
-    <div class="col-xl-12 " style="height:50px; border: 1px solid; "></div>
-</div>
-    </div>
-<div class="container">
-<div class="row">
-    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4" style="height: 600px; border: 1px solid"></div>
-    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-8 " style="height: 600px; border: 1px solid">
-       <!-- <h1 class="display-1">This is a heading</h1>
-        <h2 class="display-2">This is a heading</h2>
-        <h3 class="display-3">This is a heading</h3>
-        <h4 class="display-4">This is a heading</h4>
-        <h5 class="display-2">This is a heading</h5>
-        <h6 class="h1">This is a heading</h6>
-        <p class="text-info text-uppercase"> some content goes here.some content goes here</p>
-        <p class="text-dark text-lowercase"> some content goes here.some content goes here</p>
-        <p class="text-secondary text-center"> some content goes here.some content goes here</p>
-        <p class="text-danger text-right"> some content goes here.some content goes here</p>
-        <p class="bg-danger"> some content goes here.some content goes here</p>
-        <p class="bg-success"> some content goes here.some content goes here</p>
-        <p class="bg-secondary"> some content goes here.some content goes here</p>
-        <p class="bg-warning"> some content goes here.some content goes here</p>
-        <p class="btn-group"> some content goes here.some content goes here</p>-->
-       <!-- <blockquote class="blockquote">
-            <p>
-                some content goes here about something
-                some content goes here about something
-                some content goes here about something
-            </p>
-            <footer class="blockquote-footer">By Zulkar Nine</footer>
-        </blockquote>-->
-       <!-- <a href="" class="btn"> A Button</a>
-        <input type="button" class="btn btn-info" value="A Button">
-        <input type="submit" class="btn btn-outline-secondary" value="A Button">
-        <input type="reset"  class="btn btn-dark"  value="A Button">
-        <button type="button">  Button</button>
-        <button type="submit"> A Button</button>
-        <button type="reset"> A Button</button>-->
-        <input type="submit" class="btn btn-outline-secondary  btn-lg" value="A Button">
-        <input type="submit" class="btn btn-outline-primary btn-sm" value="A Button">
-        <input type="submit" class="btn btn-outline-warning " value="A Button">
-        <input type="submit" class="btn btn-outline-light " value="A Button">
-        <input type="submit" class="btn btn-outline-info " value="A Button">
+            </div>
 
+        <div class="form-group">
+            <label>address</label>
+            <textarea name="address" class="form-control " rows="5"  ></textarea>
 
+        </div>
+        <div class="form-group">
+            <label>address</label>
+            <input type="text" name="address-name" class="form-control">
+        </div>
 
+        <div class="form-group">
+        <label>district Name</label>
+        <select name="district-name" class="form-control">
+        <option>---select district name---</option>
+        <option value="dhaka">Dhaka</option>
+        <option value="noakhali">noakhali</option>
+        <option value="comilla">comilla</option>
+    </select>
     </div>
 
+
+    <div class="form-group ">
+        <label>Image</label>
+        <input type="file"  name="image"  accept="image/*" multiple />
+
+    </div>
+
+    <div class="form-check form-check-inline">
+        <label class="form-check-label ">
+            <input type="checkbox"  name="agree"  class="form-check-input" /> i agree with all time
+        </label>
+    </div>
+    <!--<div class="form-check form-check-inline">
+        <label class="form-check-label ">
+            <input type="checkbox"  name="agree"  class="form-check-input" /> CSS
+        </label>
+    </div>
+    <div class="form-check form-check-inline">
+        <label class="form-check-label ">
+            <input type="checkbox"  name="agree"  class="form-check-input" /> PHP
+        </label>
+    </div>-->
+
+     <div class="form-group">
+         <input type="submit" name="btn" value="submit" class="btn btn-success btn-block"/>
 </div>
+</form>
+            <div class="form-group row">
+
+                <label class="col-form-label col-sm-3">First Name</label>
+                <div class="col-sm-9">
+                    <input type="text" name="first-name" class="form-control"/>
+                </div>
+                <div class="form-group row">
+
+                    <label class="col-form-label col-sm-3">last Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" last-name" class="form-control"/>
+                    </div>
+                    <div class="form-group row">
+
+                        <label class="col-form-label col-sm-3">address</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="address" class="form-control"/>
+                        </div>
+                        <div class="form-group row">
+
+                            <label class="col-form-label col-sm-3">date-of-birth</label>
+                            <div class="col-sm-9">
+                                <input type="date" name="date-of-birth" class="form-control"/>
+                            </div>
+                            <div class="form-group row">
+
+                                <label class="col-form-label col-sm-3">image</label>
+                                <div class="col-sm-9">
+                                    <input type="file" name="image" class="form-control"/>
+                                </div>
+                                <div class="form-group row">
+
+                                    <label class="col-form-label col-sm-3">
+                                        <input type="checkbox" name="agree" class="form-control"/> i agree
+                                    </label>
+                                    <div class="col-sm-9">
+
+                                    </div>
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
-<div class="container">
-<div class="row">
-    <div class="col-xl-3 col-lg-3  col-md-3 col-sm-3" style="height: 200px; border: 1px solid"></div>
-    <div class="col-xl-3  col-lg-3 col-md-3 col-sm-3"style="height: 200px; border: 1px solid"></div>
-    <div class="col-xl-3  col-lg-3 col-md-3 col-sm-3" style="height: 200px; border: 1px solid"></div>
-    <div class="col-xl-3  col-lg-3 col-md-3 col-sm-3" style="height: 200px; border: 1px solid"></div>
+                    <table class="table table-bordered table-hover table-danger table-responsive">
+                        <tr  class="table-info">
+                          <th>Full Name</th>
+                          <th>Email address</th>
+                          <th>Phone number</th>
+                          <th>address</th>
+                          <th>City</th>
+
+                        </tr>
+
+                        <tr class="table table-bordered">
+
+                            <td >Zulkarnine</td>
+                            <td class="table-info">zulkarnine43@gmail.com</td>
+                            <td>01989419776</td>
+                            <td>dhaka</td>
+                            <td>vuter goli</td>
+                        </tr>
 
 
-</div>
-</div>
-<div class="container">
-<div class="row">
-    <div class="col-xl-12" style="height:50px ; border:1px solid"></div>
-</div>
-</div>
 
+                    </table>
 
-<script src="js/bootstrap.js"></script>
+<script  src="js/bootstrap.js"></script>
 </body>
 </html>
